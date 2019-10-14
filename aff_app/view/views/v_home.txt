@@ -1,0 +1,3 @@
+id ;order ;type ;element    ;display ;row_id ;title           ;dataset_name ;dataset_field ;ddl_ds_name ;ddl_ds_value ;ddl_ds_show ;ddl_ds_blank ;check ;blur ;start ;action ;width 
+1  ;1     ;row  ;head_text  ;block   ;       ;Hello World!    ;             ;              ;            ;             ;            ;             ;      ;     ;      ;       ;      
+2  ;2     ;row  ;lable_text ;block   ;       ;This is a demo! ;             ;              ;            ;             ;            ;             ;      ;     ;      ;       ;      

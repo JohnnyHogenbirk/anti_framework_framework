@@ -1,0 +1,7 @@
+id ;order ;type   ;element   ;display    ;row_id      ;title        ;dataset_name ;dataset_field ;ddl_ds_name ;ddl_ds_value ;ddl_ds_show ;ddl_ds_blank ;check ;blur ;start ;action        ;width 
+1  ;1     ;row    ;head_text ;block      ;            ;Cpanel views ;             ;              ;            ;             ;            ;             ;      ;     ;      ;              ;      
+2  ;2     ;column ;field     ;none       ;id          ;id           ;sys_view     ;id            ;            ;             ;            ;             ;      ;     ;      ;              ;      
+3  ;3     ;column ;field     ;table-cell ;description ;Form         ;sys_view     ;description   ;            ;             ;            ;             ;      ;     ;      ;              ;150   
+4  ;4     ;column ;field     ;none       ;view_name   ;view_name    ;sys_view     ;view_name     ;            ;             ;            ;             ;      ;     ;      ;              ;      
+5  ;5     ;column ;field     ;none       ;map_file    ;map_file     ;sys_view     ;map_file      ;            ;             ;            ;             ;      ;     ;      ;              ;      
+6  ;6     ;column ;next_view ;table-cell ;next_view   ;Change       ;             ;              ;            ;             ;            ;             ;      ;     ;      ;sys_view_rows ;40    

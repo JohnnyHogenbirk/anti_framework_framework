@@ -1,0 +1,9 @@
+id ;order ;type   ;element   ;display    ;row_id      ;title             ;dataset_name  ;dataset_field ;ddl_ds_name ;ddl_ds_value ;ddl_ds_show ;ddl_ds_blank ;check ;blur ;start ;action             ;width 
+1  ;1     ;row    ;head_text ;block      ;            ;Cpanel models put ;              ;              ;            ;             ;            ;             ;      ;     ;      ;                   ;      
+2  ;2     ;column ;field     ;none       ;id          ;id                ;sys_model_put ;id            ;            ;             ;            ;             ;      ;     ;      ;                   ;      
+3  ;3     ;column ;field     ;table-cell ;model_name  ;Dataset name      ;sys_model_put ;model_name    ;            ;             ;            ;             ;      ;     ;      ;                   ;150   
+4  ;4     ;column ;field     ;table-cell ;get_put     ;Get Put           ;sys_model_put ;get_put       ;            ;             ;            ;             ;      ;     ;      ;                   ;150   
+5  ;5     ;column ;field     ;none       ;ds_file     ;ds_file           ;sys_model_put ;ds_file       ;            ;             ;            ;             ;      ;     ;      ;                   ;      
+6  ;5     ;column ;field     ;none       ;map_file    ;map_file          ;sys_model_put ;map_file      ;            ;             ;            ;             ;      ;     ;      ;                   ;      
+7  ;5     ;column ;field     ;table-cell ;description ;description       ;sys_model_put ;description   ;            ;             ;            ;             ;      ;     ;      ;                   ;150   
+8  ;6     ;column ;next_view ;table-cell ;next_view   ;Change            ;              ;              ;            ;             ;            ;             ;      ;     ;      ;sys_model_put_rows ;40    

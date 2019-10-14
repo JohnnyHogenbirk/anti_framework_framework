@@ -1,0 +1,12 @@
+id ;order ;type ;element     ;display      ;row_id      ;title                ;dataset_name  ;dataset_field ;ddl_ds_name        ;ddl_ds_value ;ddl_ds_show ;ddl_ds_blank ;check ;blur ;start ;action ;width 
+1  ;1     ;row  ;head_text   ;block        ;            ;Change model get row ;              ;              ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+2  ;2     ;row  ;hidden      ;none         ;id          ;id                   ;sys_model_row ;id            ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+3  ;3     ;row  ;lable_value ;inline-block ;id_org      ;Id                   ;sys_model_row ;id_org        ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+5  ;5     ;row  ;ddl         ;inline-block ;type        ;Type                 ;sys_model_row ;type          ;sys_model_get_type ;name         ;description ;             ;      ;     ;      ;       ;      
+6  ;6     ;row  ;textbox     ;inline-next  ;source_name ;Source name          ;sys_model_row ;source_name   ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+7  ;7     ;row  ;textbox     ;inline-block ;columns     ;Columns              ;sys_model_row ;columns       ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+8  ;8     ;row  ;textbox     ;inline-next  ;where       ;Where                ;sys_model_row ;where         ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+9  ;9     ;row  ;textbox     ;inline-block ;sort        ;Sort                 ;sys_model_row ;sort          ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+21 ;21    ;row  ;button      ;inline-next  ;button1     ;Back                 ;              ;              ;                   ;             ;            ;             ;      ;     ;      ;back   ;100   
+22 ;22    ;row  ;button      ;inline-block ;button2     ;Save                 ;              ;              ;                   ;             ;            ;             ;      ;     ;      ;save   ;100   
+23 ;23    ;row  ;button      ;inline-block ;button3     ;Delete               ;              ;              ;                   ;             ;            ;             ;      ;     ;      ;delete ;100   

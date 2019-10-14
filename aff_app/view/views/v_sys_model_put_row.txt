@@ -1,0 +1,17 @@
+id ;order ;type ;element     ;display      ;row_id        ;title                ;dataset_name  ;dataset_field ;ddl_ds_name        ;ddl_ds_value ;ddl_ds_show ;ddl_ds_blank ;check ;blur ;start ;action ;width 
+1  ;1     ;row  ;head_text   ;block        ;              ;Change model put row ;              ;              ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+2  ;2     ;row  ;hidden      ;none         ;id            ;id                   ;sys_model_row ;id            ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+3  ;3     ;row  ;lable_value ;inline-block ;id_org        ;Id                   ;sys_model_row ;id_org        ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+5  ;5     ;row  ;textbox     ;inline-block ;button_id     ;Button id            ;sys_model_row ;button_id     ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+6  ;6     ;row  ;textbox     ;inline-next  ;action        ;Action               ;sys_model_row ;action        ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+7  ;7     ;row  ;ddl         ;inline-block ;type          ;Type                 ;sys_model_row ;type          ;sys_model_put_type ;name         ;description ;             ;      ;     ;      ;       ;      
+8  ;8     ;row  ;textbox     ;inline-block ;source_name   ;Source name          ;sys_model_row ;source_name   ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+9  ;9     ;row  ;textbox     ;inline-next  ;ref_id_db     ;Ref id db            ;sys_model_row ;ref_id_db     ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+10 ;10    ;row  ;textbox     ;inline-block ;ref_id_form   ;Ref id form          ;sys_model_row ;ref_id_form   ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+11 ;11    ;row  ;textbox     ;inline-next  ;store_id_db   ;Store id db          ;sys_model_row ;store_id_db   ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+12 ;12    ;row  ;textbox     ;inline-block ;store_id_form ;Store id form        ;sys_model_row ;store_id_form ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+13 ;13    ;row  ;ddl         ;inline-next  ;next_view     ;Next form            ;sys_model_row ;next_view     ;sys_view           ;view_name    ;description ;yes          ;      ;     ;      ;       ;
+14 ;14    ;row  ;textbox     ;inline-block ;alert         ;Alert text           ;sys_model_row ;alert         ;                   ;             ;            ;             ;      ;     ;      ;       ;      
+15 ;15    ;row  ;button      ;inline-next  ;button1       ;Back                 ;              ;              ;                   ;             ;            ;             ;      ;     ;      ;back   ;100   
+16 ;16    ;row  ;button      ;inline-block ;button2       ;Save                 ;              ;              ;                   ;             ;            ;             ;      ;     ;      ;save   ;100   
+17 ;17    ;row  ;button      ;inline-block ;button3       ;Delete               ;              ;              ;                   ;             ;            ;             ;      ;     ;      ;delete ;100   

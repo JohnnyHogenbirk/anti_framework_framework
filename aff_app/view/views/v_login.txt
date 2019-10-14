@@ -1,0 +1,5 @@
+id ;order ;type ;element   ;display ;row_id   ;title                            ;dataset_name ;dataset_field ;ddl_ds_name ;ddl_ds_value ;ddl_ds_show ;ddl_ds_blank ;check           ;blur ;start ;action ;width 
+1  ;1     ;row  ;head_text ;block   ;         ;Login (admin-admin or user-user) ;             ;              ;            ;             ;            ;             ;                ;     ;      ;       ;      
+2  ;2     ;row  ;textbox   ;block   ;username ;Username                         ;             ;              ;            ;             ;            ;             ;js_not_empty.js ;     ;      ;       ;      
+3  ;3     ;row  ;password  ;block   ;password ;Password                         ;             ;              ;            ;             ;            ;             ;js_not_empty.js ;     ;      ;       ;      
+4  ;4     ;row  ;button    ;block   ;button1  ;Login                            ;             ;              ;            ;             ;            ;             ;                ;     ;      ;save   ;      

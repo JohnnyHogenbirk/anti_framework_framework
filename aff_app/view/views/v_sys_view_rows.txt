@@ -1,0 +1,19 @@
+id ;order ;type   ;element   ;display      ;row_id        ;title         ;dataset_name     ;dataset_field ;ddl_ds_name ;ddl_ds_value ;ddl_ds_show ;ddl_ds_blank ;check ;blur ;start ;action       ;width 
+1  ;1     ;row    ;head_text ;block        ;              ;Change view   ;                 ;              ;            ;             ;            ;             ;      ;     ;      ;             ;      
+2  ;2     ;column ;field     ;none         ;id            ;id            ;sys_view_rows    ;id            ;            ;             ;            ;             ;      ;     ;      ;             ;20    
+3  ;3     ;column ;field     ;table-cell   ;id_org        ;Id            ;sys_view_rows    ;id_org        ;            ;             ;            ;             ;      ;     ;      ;             ;20    
+4  ;4     ;column ;field     ;table-cell   ;order         ;Order         ;sys_view_rows    ;order         ;            ;             ;            ;             ;      ;     ;      ;             ;20    
+5  ;5     ;column ;field     ;table-cell   ;type          ;Type          ;sys_view_rows    ;type          ;            ;             ;            ;             ;      ;     ;      ;             ;30    
+6  ;6     ;column ;field     ;table-cell   ;element       ;Element       ;sys_view_rows    ;element       ;            ;             ;            ;             ;      ;     ;      ;             ;50    
+7  ;7     ;column ;field     ;table-cell   ;display       ;Display       ;sys_view_rows    ;display       ;            ;             ;            ;             ;      ;     ;      ;             ;50    
+8  ;8     ;column ;field     ;table-cell   ;row_id        ;Row id        ;sys_view_rows    ;row_id        ;            ;             ;            ;             ;      ;     ;      ;             ;70    
+9  ;9     ;column ;field     ;table-cell   ;title         ;Title         ;sys_view_rows    ;title         ;            ;             ;            ;             ;      ;     ;      ;             ;90    
+10 ;10    ;column ;field     ;table-cell   ;dataset_name  ;Dataset name  ;sys_view_rows    ;dataset_name  ;            ;             ;            ;             ;      ;     ;      ;             ;90    
+11 ;11    ;column ;field     ;table-cell   ;dataset_field ;Dataset field ;sys_view_rows    ;dataset_field ;            ;             ;            ;             ;      ;     ;      ;             ;50    
+12 ;12    ;column ;field     ;table-cell   ;action        ;Action        ;sys_view_rows    ;action        ;            ;             ;            ;             ;      ;     ;      ;             ;70    
+13 ;13    ;column ;field     ;table-cell   ;width         ;Width         ;sys_view_rows    ;width         ;            ;             ;            ;             ;      ;     ;      ;             ;50    
+14 ;14    ;column ;next_view ;table-cell   ;next_view     ;Change        ;                 ;              ;            ;             ;            ;             ;      ;     ;      ;sys_view_row ;40    
+14 ;14    ;row    ;hidden    ;none         ;view_id       ;              ;sys_view_id_this ;view_id       ;            ;             ;            ;             ;      ;     ;      ;             ;
+15 ;15    ;row    ;button    ;inline-block ;button1       ;Back          ;                 ;              ;            ;             ;            ;             ;      ;     ;      ;back         ;100   
+16 ;16    ;row    ;button    ;inline-block ;button2       ;Add           ;                 ;              ;            ;             ;            ;             ;      ;     ;      ;add          ;100   
+17 ;17    ;row    ;button    ;inline-block ;button3       ;Delete        ;                 ;              ;            ;             ;            ;             ;      ;     ;      ;delete       ;100
