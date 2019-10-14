@@ -1,0 +1,43 @@
+id;model_name;get_put;map_file;description
+1;color_cloud;get;model/models/get/mg_color_cloud.txt;Color cloud, value in Demo form
+2;demo_overview;get;model/models/get/mg_demo_overview.txt;Demo overview
+3;sys_change;get;model/models/get/mg_sys_change.txt;Changes in Cpanel change
+3.1;sys_change_columns_model_get_add;get;model/models/get/mg_sys_change_columns_model_get_add.txt;Change column model get add
+3.11;sys_change_columns_model_get_del;get;model/models/get/mg_sys_change_columns_model_get_del.txt;Change column model get delete
+3.2;sys_change_columns_model_put_add;get;model/models/get/mg_sys_change_columns_model_put_add.txt;Change column model put add
+3.3;sys_change_columns_model_put_del;get;model/models/get/mg_sys_change_columns_model_put_del.txt;Change column model get delete
+3.4;sys_change_columns_view_add;get;model/models/get/mg_sys_change_columns_view_add.txt;Change column view add
+3.5;sys_change_columns_view_del;get;model/models/get/mg_sys_change_columns_view_del.txt;Change column view del
+3.6;sys_model_get;get;model/models/get/mg_sys_model_get.txt;Models get
+4;sys_model_get_type;get;model/models/get/mg_sys_model_get_type.txt;Types of get
+6;sys_model_id_this;get;model/models/get/mg_sys_model_id_this.txt;Catch the id from the form
+6.1;sys_model_put;get;model/models/get/mg_sys_model_put.txt;Models put
+5;sys_model_put_type;get;model/models/get/mg_sys_model_put_type.txt;Types of put
+7;sys_model_row;get;model/models/get/mg_sys_model_row.txt;Catch the row from the model
+8;sys_model_rows;get;model/models/get/mg_sys_model_rows.txt;Catch the rows from the model
+9;sys_model_type;get;model/models/get/mg_sys_model_type.txt;Model types
+9.1;sys_view;get;model/models/get/mg_sys_view.txt;Views
+10;sys_view_action;get;model/models/get/mg_sys_view_action.txt;View actions
+11;sys_view_display;get;model/models/get/mg_sys_view_display.txt;View displays
+12;sys_view_element;get;model/models/get/mg_sys_view_element.txt;View elements
+13;sys_view_get;get;model/models/get/mg_sys_view_get.txt;View gets
+14;sys_view_id_this;get;model/models/get/mg_sys_view_id_this.txt;View id_this
+15;sys_view_js_b;get;model/models/get/mg_sys_view_js_b.txt;View js blur
+16;sys_view_js_e;get;model/models/get/mg_sys_view_js_e.txt;View js start
+17;sys_view_js_s;get;model/models/get/mg_sys_view_js_s.txt;View js_submit
+18;sys_view_model;get;model/models/get/mg_sys_view_model.txt;View models
+20;sys_view_put;get;model/models/get/mg_sys_view_put.txt;View model puts
+21;sys_view_row;get;model/models/get/mg_sys_view_row.txt;View model row
+22;sys_view_rows;get;model/models/get/mg_sys_view_rows.txt;View model rows
+23;sys_view_type;get;model/models/get/mg_sys_view_type.txt;View types
+24;sys_yes_no;get;model/models/get/mg_sys_yes_no.txt;View yes no
+25;demo_form;put;model/models/put/mp_demo_form.txt;Demo form
+26;sys_change;put;model/models/put/mp_sys_change.txt;Demo form
+27;sys_model_get_row;put;model/models/put/mp_sys_model_get_row.txt;Demo form
+28;sys_model_get_rows;put;model/models/put/mp_sys_model_get_rows.txt;Demo form
+29;sys_model_put_row;put;model/models/put/mp_sys_model_put_row.txt;Demo form
+30;sys_model_put_rows;put;model/models/put/mp_sys_model_put_rows.txt;Demo form
+31;sys_view_row;put;model/models/put/mp_sys_view_row.txt;Demo form
+32;sys_view_rows;put;model/models/put/mp_sys_view_rows.txt;Demo form
+20190929212120rnaxnpie;login;put;model/models/put/mp_login.txt;login
+20190930205428bmsufwbd;logout;get;model/models/get/mg_logout.txt;logout

@@ -1,0 +1,2 @@
+id ;order ;type ;source_name       ;columns ;where ;sort 
+1  ;      ;php  ;sys_view_rows.php ;        ;      ;     

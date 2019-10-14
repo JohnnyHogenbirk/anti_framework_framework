@@ -1,0 +1,8 @@
+id;js_file                  ;type  ;map_file                                   ;description
+1;js_not_empty.js           ;submit;view/javascript/dynamic/js_not_empty.js            ;Not empty
+2;js_make_date.js           ;blur  ;view/javascript/dynamic/js_make_date.js            ;Make date
+3;jc_view_justify_type.js   ;blur  ;view/javascript/dynamic/jc_view_justify_type.js    ;View justify on type change
+4;jc_view_justify_element.js;blur  ;view/javascript/dynamic/jc_view_justify_element.js ;View justify on element change
+5;jc_view_justify_start.js  ;start ;view/javascript/dynamic/jc_view_justify_start.js   ;View justify on start
+6;jc_change_action.js       ;blur  ;view/javascript/dynamic/jc_change_action.js        ;View sys_change, show or hide elements after change action
+7;jc_gen.js                 ;blur  ;view/javascript/dynamic/jc_gen.js                  ;View sys_gen, show or hide elements after change action

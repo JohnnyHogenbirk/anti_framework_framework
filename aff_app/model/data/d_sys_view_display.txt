@@ -1,0 +1,6 @@
+id;name;description
+1;block;Block
+2;inline-block;Inline block
+3;inline-next;Inline next
+4;table-cell;Table cell
+5;none;None

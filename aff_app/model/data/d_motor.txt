@@ -1,0 +1,4 @@
+id;motor;type;color
+1;Honda;Pan European;Green
+2;BMW;K75;Blue
+3;Honda;125XL;White

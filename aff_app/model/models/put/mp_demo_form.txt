@@ -1,0 +1,3 @@
+id ;order ;button_id ;action ;type      ;source_name ;ref_id_db ;ref_id_form ;store_id_db ;store_id_form ;next_view     ;alert                                   
+1  ;1     ;button1   ;update ;txt       ;color.txt   ;id        ;id          ;name        ;name          ;              ;
+2  ;2     ;button1   ;next   ;next_view ;            ;          ;            ;            ;              ;demo_overview ;Data updated, showing demo overview now

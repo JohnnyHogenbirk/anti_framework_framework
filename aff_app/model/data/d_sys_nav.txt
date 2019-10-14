@@ -1,0 +1,11 @@
+id;nav_id;order;type;niv;nav_title;login_done;role
+1;demo_overview;3;nav;1;Demo overview;yes;all
+2;demo_form;2;nav;1;Demo form;yes;all
+3;admin;3;head;1;Admin;yes;admin
+4;sys_view;4;nav;2;Cp-views;yes;admin
+5;sys_model_get;5;nav;2;Cp-models get;yes;admin
+6;sys_model_put;6;nav;2;Cp-models put;yes;admin
+7;sys_change;7;nav;2;Cp-changes;yes;admin
+8;sys_gen;8;nav;2;Cp-generate;yes;admin
+9;logout;9;nav;1;Logout;yes;all
+10;login;1;nav;1;Login;no;all

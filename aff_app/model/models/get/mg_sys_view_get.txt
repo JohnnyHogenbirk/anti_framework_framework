@@ -1,0 +1,2 @@
+id ;order ;type ;source_name ;columns ;where         ;sort       
+1  ;      ;txt  ;sys_ds.txt  ;*       ;get_put='get' ;model_name 

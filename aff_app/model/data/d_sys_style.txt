@@ -1,0 +1,132 @@
+id;object;style_name;style_value;id_app
+1.1;var;base_fontsize;16px;xx
+1.2;var;base_cursor;pointer;xx
+1.3;var;base_black;#262626;xx
+1.4;var;base_white;#FAFAFA;xx
+1.5;var;base_fontfamily;'Roboto', sans-serif;xx
+1.7;@font-face;font-family;'Roboto';xx
+1.8;@font-face;src;url(view/fonts/Roboto-Regular.ttf) format('truetype');xx
+1.9;body;background-color;@base_white;xx
+2;body;overflow-x;hidden;xx
+2.1;body;margin;0px;xx
+2.2;body;font-family;@base_fontfamily;xx
+2.3;body;font-size;@base_fontsize;xx
+3;body;height;100%;xx
+4;div;display;block;xx
+5;.button;background-color;yellow;xx
+6;.button;margin-top;10px;xx
+6;.button;margin-bottom;20px;xx
+7;.button;padding;5px;xx
+8;.button;border-radius;5px;xx
+9;.button;text-align;center;xx
+10;.button;width;100px;xx
+11;.button;cursor;@base_cursor;xx
+11.2;.button;margin-right;20px;xx
+14;.el_nav_item;cursor;@base_cursor;xx
+15;.el_nav_item;margin-bottom;10px;xx
+16;.el_nav_item;list-style;none;xx
+17;.el_nav_item;color;@base_white;xx
+24;hr;color;lightblue;xx
+25;.head_text;font-size;25px;xx
+26;.head_text;margin-bottom;15px;xx
+28;.textbox;font-family;@base_fontfamily;xx
+29;.textbox;font-size;@base_fontsize;xx
+29.1;.textbox;border-radius;5px;xx
+29.2;.textbox;width;200px;xx
+29.3;.textbox;padding;5px;xx
+29.4;.textarea;font-family;@base_fontfamily;xx
+29.5;.textarea;font-size;@base_fontsize;xx
+29.6;.textarea;border-radius;5px;xx
+29.7;.textarea;width;201px;xx
+29.8;.textarea;padding;5px;xx
+30;.overview_th;font-weight;bold;xx
+31;.overview_th;text-decoration;underline;xx
+32;.overview_th;padding;2px 2px 5px 2px;xx
+33;.overview_td;border-bottom;1px solid lightblue;xx
+34;.overview_td;padding;2px;xx
+34.1;.overview_change;text-decoration;underline;xx
+35;.overview_change;cursor;@base_cursor;xx
+36;.form_row;margin;10px 10px 0px 0px;xx
+36.15;.form_row;vertical-align;top;xx
+36.2;.form_button;margin-top;10px;xx
+36.3;.form_button;margin-right;30px;xx
+36.4;.form_button;vertical-align;top;xx
+37;.lable_value;padding-left;7px;xx
+37.1;.lable_value;display;inline-block;xx
+38;.select;width;213px;xx
+39;.select;border-radius;5px;xx
+40;.select;height;26px;xx
+41;.select;font-size;@base_fontsize;xx
+42;.select;padding;2px;xx
+42;.select;color;@base_black;xx
+43;header;position;fixed;xx
+44;header;width;100%;xx
+45;header;height;45px;xx
+46;header;background-color;@base_black;xx
+47;header;color;@base_white;xx
+48;header;z-index;3;xx
+49;.svg_header_nav;width;32px;xx
+50;.svg_header_nav;height;32px;xx
+51;.svg_header_nav;position;absolute;xx
+52;.svg_header_nav;margin-left;11px;xx
+53;.svg_header_nav;margin-top;6px;xx
+54;.svg_header_nav;cursor;@base_cursor;xx
+55;.svg_header_nav_line;stroke;#ffffff;xx
+56;.svg_header_nav_line;stroke-width;3;xx
+57;.svg_header_title;position;absolute;xx
+58;.svg_header_title;left;55px;xx
+59;.svg_header_title;top;7px;xx
+60;.svg_header_title;font-size;24px;xx
+61;.el_nav;background-color;@base_black;xx
+62;.el_nav;color;@base_white;xx
+63;.el_nav;width;150px;xx
+64;.el_nav;z-index;2;xx
+65;.el_nav;left;-150px;xx
+67;.el_nav;position;fixed;xx
+68;.el_nav;margin-top;45px;xx
+68.10;.el_nav;height;100%;xx
+68.11;.el_nav;-webkit-tap-highlight-color;transparent;xx
+68.2;.el_nav;overflow-y;auto;xx
+68.3;.el_nav::-webkit-scrollbar;background-color;#ffffff;xx
+68.4;.el_nav::-webkit-scrollbar;width;15px;xx
+68.5;.el_nav::-webkit-scrollbar-thumb;background-color;#6b5e90;xx
+68.7;.el_nav::-webkit-scrollbar-track;background-color;#363149;xx
+62;.el_article;color;@base_black;xx
+20.11;.el_article;width;-webkit-calc(100% - 20px);xx
+20.12;.el_article;width;-moz-calc(100% - 20px);xx
+20.13;.el_article;width;calc(100% - 20px);xx
+20.7;.el_article;z-index;1;xx
+20.6;.el_article;left;0px;xx
+20.4;.el_article;position;fixed;xx
+20.5;.el_article;margin-top;45px;xx
+20.8;.el_article;height;100%;xx
+20.3;.el_article;overflow-y;auto;xx
+20.2;.el_article;padding;10px;xx
+21.1;.el_article::-webkit-scrollbar;background-color;#ffffff;xx
+21.2;.el_article::-webkit-scrollbar;width;15px;xx
+21.3;.el_article::-webkit-scrollbar-thumb;background-color;#6b5e90;xx
+21.4;.el_article::-webkit-scrollbar-track;background-color;#363149;xx
+69;.svg_nav_arrow_right;display;block;xx
+70;.svg_nav_arrow_left;display;none;xx
+71;.svg_nav_arrow;position;absolute;xx
+72;.svg_nav_arrow;width;30px;xx
+73;.svg_nav_arrow;height;20px;xx
+74;.svg_nav_arrow;right;0px;xx
+75;.svg_nav_arrow;cursor;@base_cursor;xx
+76;.svg_nav_arrow_line;stroke;#ffffff;xx
+77;.svg_nav_arrow_line;stroke-width;2;xx
+78;.el_nav_ul;padding-left;10px;xx
+80;.el_nav_ul;cursor;@base_cursor;xx
+81;.el_nav_div;margin-top;25px;xx
+82;.el_alert_warning;background-color;#FF0000;xx
+83;.el_alert_ok;background-color;#00FF00;xx
+84;.el_alert_attent;background-color;#FF4500;xx
+85;.el_alert;margin-bottom;5px;xx
+86;.el_alert;padding;2px;xx
+87;.el_alert;-webkit-transition;all 0.2s ease-in;xx
+88;.el_alert;-moz-transition;all 0.2s ease-in;xx
+89;.el_alert;-o-transition;all 0.2s ease-in;xx
+90;.el_alert;transition;all 0.2s ease-in;xx
+91;.el_alert;overflow;hidden;xx
+92;.el_alert;height;auto;xx
+93;.row_title;font-weight;bold;xx

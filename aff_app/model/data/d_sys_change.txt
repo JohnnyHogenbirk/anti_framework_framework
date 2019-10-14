@@ -1,0 +1,8 @@
+id;name
+1;Views, add column
+2;Views, delete column
+3;Get models, add column
+4;Get models, delete column
+5;Put models, add column
+6;Put models, delete column
+7;Rewrite all forms and datasets

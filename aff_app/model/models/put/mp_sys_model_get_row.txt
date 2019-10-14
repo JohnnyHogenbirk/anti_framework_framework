@@ -1,0 +1,9 @@
+id ;order ;button_id ;action ;type      ;source_name                          ;ref_id_db ;ref_id_form ;store_id_db ;store_id_form ;next_view          ;alert              
+1  ;1     ;button1   ;php    ;php       ;sys_view_row_get_id_view.php         ;          ;            ;            ;              ;                   ;
+2  ;2     ;button1   ;next   ;next_view ;                                     ;          ;            ;            ;              ;sys_model_get_rows ;
+3  ;3     ;button2   ;update ;php       ;sys_model_row_update.php             ;          ;            ;            ;              ;                   ;
+4  ;4     ;button2   ;php    ;php       ;sys_view_row_get_id_view_and_row.php ;          ;            ;            ;              ;                   ;
+5  ;5     ;button2   ;next   ;next_view ;                                     ;          ;            ;            ;              ;sys_model_get_row  ;Row updated
+6  ;6     ;button3   ;delete ;php       ;sys_model_row_del.php             ;          ;            ;            ;              ;                   ;
+7  ;7     ;button3   ;php    ;php       ;sys_view_row_get_id_view.php         ;          ;            ;            ;              ;                   ;
+8  ;8     ;button3   ;next   ;next_view ;                                     ;          ;            ;            ;              ;sys_model_get_rows ;Row/Column deleted

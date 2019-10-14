@@ -1,0 +1,7 @@
+id;name;description
+1;back;Back
+2;next;Next
+3;save;Save
+4;delete;Delete
+5;download;Download
+6;email;Email

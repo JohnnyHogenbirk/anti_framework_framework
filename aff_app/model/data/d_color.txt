@@ -1,0 +1,5 @@
+id;name;type
+1;4;cloud
+2;Green;grass
+3;Blue;cloud
+4;White;cloud

@@ -1,0 +1,17 @@
+id;view_name;map_file;sys;description
+1;demo_form;view/views/v_demo_form.txt;no;Demo form
+2;demo_overview;view/views/v_demo_overview.txt;no;Demo overview
+4;home;view/views/v_home.txt;no;Welcome
+5.1;sys_gen;view/views/v_sys_gen.txt;no;Generate
+5.2;sys_change;view/views/v_sys_change.txt;no;Change
+6;sys_model_get;view/views/v_sys_model_get.txt;no;Models get
+7;sys_model_get_row;view/views/v_sys_model_get_row.txt;no;Model get row
+8;sys_model_get_rows;view/views/v_sys_model_get_rows.txt;no;Model get rows
+9;sys_model_put;view/views/v_sys_model_put.txt;no;Models put
+10;sys_model_put_rows;view/views/v_sys_model_put_rows.txt;no;Model put rows
+11;sys_model_put_row;view/views/v_sys_model_put_row.txt;no;Model put row
+12;sys_view;view/views/v_sys_view.txt;no;Views
+13;sys_view_rows;view/views/v_sys_view_rows.txt;no;View rows
+14;sys_view_row;view/views/v_sys_view_row.txt;no;View row
+20190929212120bncauwhp;login;view/views/v_login.txt;no;login
+20190930200350ehzuvbpg;logout;view/views/v_logout.txt;no;logout

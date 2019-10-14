@@ -1,0 +1,6 @@
+id ;order ;button_id ;action ;type      ;source_name               ;ref_id_db ;ref_id_form ;store_id_db ;store_id_form ;next_view         ;alert 
+1  ;1     ;button1   ;next   ;next_view ;                          ;          ;            ;            ;              ;sys_model_get     ;
+2  ;2     ;button2   ;php    ;php       ;sys_model_get_rows_add.php ;          ;            ;            ;              ;                  ;
+3  ;3     ;button2   ;next   ;next_view ;                          ;          ;            ;            ;              ;sys_model_get_row ;
+4  ;4     ;button3   ;php    ;php       ;sys_model_get_rows_del.php ;          ;            ;            ;              ;             ;
+5  ;5     ;button3   ;next   ;next_view ;                      ;          ;            ;            ;              ;sys_model_get     ;Check the get model and view, if a view or get model must be deleted

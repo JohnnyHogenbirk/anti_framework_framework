@@ -1,0 +1,11 @@
+id;name;description
+1;head_text;Head text
+2;lable_text;Lable text
+3;lable_value;Lable value
+4;ddl;Dropdownlist
+5;textbox;Textbox
+6;password;Password
+7;hidden;Hidden
+8;button;Button
+9;field;Data field
+10;next_view;Change link
