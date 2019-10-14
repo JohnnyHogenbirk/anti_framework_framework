@@ -1,0 +1,8 @@
+id ;order ;type   ;element   ;display         ;row_id      ;title         ;dataset_name  ;dataset_field ;ddl_ds_name ;ddl_ds_value ;ddl_ds_show ;ddl_ds_blank ;check ;blur ;start ;action ;width
+1  ;1     ;row    ;head_text ;block           ;            ;Products      ;              ;              ;            ;             ;            ;             ;      ;     ;      ;       ;
+2  ;2     ;column ;field     ;none            ;id          ;id            ;product       ;id            ;            ;             ;            ;             ;      ;     ;      ;       ;
+3  ;3     ;column ;field     ;table-cell      ;name        ;Name          ;product       ;name          ;            ;             ;            ;             ;      ;     ;      ;       ;70
+4  ;4     ;column ;field     ;table-cell      ;description ;Description   ;product       ;description   ;            ;             ;            ;             ;      ;     ;      ;       ;300
+5  ;5     ;column ;field     ;table-cell      ;version     ;Version       ;product       ;version       ;            ;             ;            ;             ;      ;     ;      ;       ;70
+6  ;6     ;column ;field     ;table-cell      ;date        ;Date          ;product       ;date          ;            ;             ;            ;             ;      ;     ;      ;       ;100
+7  ;7     ;column ;field     ;table-cell_link ;download    ;Download      ;product       ;download      ;            ;             ;            ;             ;      ;     ;      ;       ;70

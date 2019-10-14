@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <link rel="icon" sizes="192x192" href="view/images/johnnyhogenbirk_192.png">
+    <link rel="apple-touch-icon" href="view/images/johnnyhogenbirk_152.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#FAFAFA"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="AFF">
+    <meta name="msapplication-TileImage" content="view/images/johnnyhogenbirk_144.png">
+    <meta name="msapplication-TileColor" content="#262626">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti Framework Framework</title>
+    <script>
+        var load_interval;
+        var js_loaded = 0;
+        var css_loaded = 0;
+
+        function f_register_pwa(){
+            'use strict';
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+                }, /*catch*/ function (error) {
+                    console.log('PWA Service worker registration error: ', error);
+                });
+            } else {
+                console.log('PWA Service workers not supported.');
+            }
+        }
+
+        function f_get_start(view_name) {
+            var oReq = new XMLHttpRequest();
+            oReq.onerror = f_get_start_error;
+            oReq.onload = f_get_start_catch_reply;
+            var vars = 'api.php?view_name=' + view_name;
+            oReq.open("get", vars, true);
+            oReq.send(null);
+        }
+
+        function f_get_start_error() {
+            // error handling, pretty basic
+            alert("Error, do you have a good internet connection? Try again.");
+        }
+
+        function f_get_start_catch_reply() {
+            // catch reply by server
+            var response_text;
+
+            try {
+                response_text = JSON.parse(this.responseText);
+            } catch (e) {
+                document.body.innerHTML = e + '<br><br>' + this.responseText;
+                return;
+            }
+            // manage the reply of data
+            switch (response_text["view_name"]) {
+                case 's_javascript':
+                    f_add_js_style(response_text["data"], 'script');
+                    js_loaded = 1;
+                    break;
+                case 's_style':
+                    f_add_js_style(response_text["data"], 'style');
+                    css_loaded = 1;
+                    break;
+                case 's_html':
+                    f_add_html(response_text["data"]);
+                    break;
+            }
+        }
+
+        function f_add_html(this_data){
+            var i, el, inner_html, id;
+            var script_data = '';
+            var row_arr = new Array();
+            var attr_arr = new Array();
+
+            // loop over this_data
+            for(i = 0; i < this_data.length; i++){
+                row_arr = this_data[i].split('|');
+                if(row_arr.length > 0) {
+                    switch(row_arr[1]){
+                        case 'svg':
+                            el = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                            break;
+                        case 'line':
+                            el = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                            break;
+                        case 'script':
+                            script_data += row_arr[2];
+                            break;
+                        default:
+                            el = document.createElement(row_arr[1]);
+                    }
+                    if(row_arr[1] != 'script') {
+                        inner_html = '';
+                        id = '';
+                        for (p = 2; p < row_arr.length; p++) {
+                            attr_arr = row_arr[p].split('=');
+                            if (attr_arr[0] == 'innerHTML') {
+                                inner_html = attr_arr[1];
+                            } else {
+                                el.setAttribute(attr_arr[0], attr_arr[1]);
+                                if (attr_arr[0] == 'id') {
+                                    id = attr_arr[1];
+                                }
+                            }
+                        }
+                        document.getElementById(row_arr[0]).appendChild(el);
+                        if ((inner_html != '') && (id != '')) {
+                            document.getElementById(id).innerHTML = inner_html;
+                        }
+                    }
+                }
+            }
+            if(script_data != ''){
+                // sometimes the script is not added to the DOM, so wait until it is
+                f_add_js_style(script_data, 'script');
+            }
+        }
+
+        function f_add_js_style(this_data, element_name){
+            if(this_data == ''){
+                return;
+            }
+            var el;
+
+            el = document.createElement(element_name);
+            el.innerHTML = this_data;
+            document.head.appendChild(el);
+        }
+
+    </script>
+</head>
+<body id="el_body">
+<script>
+    window.onload = function () {
+        // register pwa
+        f_register_pwa();
+        // load javascript and style
+        f_get_start('s_javascript');
+        f_get_start('s_style');
+        // wait until javascript and style are loaded (trick, because async=false in XMLHttpRequest is deprecated)
+        load_interval = setInterval(load_html_after_js_and_css, 1);
+    };
+    function load_html_after_js_and_css(){
+        if((js_loaded == 1) && (css_loaded == 1)) {
+            clearInterval(load_interval);
+            f_get_start('s_html');
+        }
+    }
+</script>
+</body>
+</html>
