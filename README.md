@@ -2,7 +2,9 @@
 ## Preface
 ### Framework
 Low-code, PWA, API’s: all hot items in software development. 
+
 Above those items there is another trend: frameworks. We know frameworks for specific languages: Laravel for php, Angular for Javascript and a lot more. But there are also frameworks for Low-code application development. Inside them you can use one or more languages, even language frameworks as Vue Js.
+
 With the frameworks you can make PWA’s and API’s. Or monolithic legacy systems, whatever you want.
 
 ### Do we need them?
