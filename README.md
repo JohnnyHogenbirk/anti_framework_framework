@@ -56,8 +56,8 @@ What I want to give is a thought, a way of set up code, an architecture. Use wha
 It can be handy to download the code before looking at the pictures and reading the text. But, I leave it to you. You can start with app_site. It’s less complex: no login, no ini generation functionality.
 
 You can try it your self at the demo sites (they will be refreshed daily):
-- [AFF site](https://johnnyhogenbirk.nl/aff_site/){:target="_blank"}
-- [AFF app](https://johnnyhogenbirk.nl/aff_app/){:target="_blank"}
+- [AFF site](https://johnnyhogenbirk.nl/aff_site/)
+- [AFF app](https://johnnyhogenbirk.nl/aff_app/)
 
 
 ### Step 1
