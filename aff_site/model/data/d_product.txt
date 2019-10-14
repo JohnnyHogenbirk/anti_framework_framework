@@ -1,5 +1,5 @@
 id;name;description;version;date;download
-1 ;Site;Code for making a site;2;14-10-2019;aff_site_2.zip
-2 ;App;Code for making a application, with login functionality and building views and models;2;14-10-2019;aff_app_2.zip
-3 ;Site;Code for making a site;1;07-10-2019;aff_site_1.zip
-4 ;App;Code for making a application, with login functionality and building views and models;1;07-10-2019;aff_app_1.zip
+1 ;Site;Code for making a site;2;14-10-2019;https://www.johnnyhogenbirk.nl/items/aff/zips/aff_site_2.zip
+2 ;App;Code for making a application, with login functionality and building views and models;2;14-10-2019;https://www.johnnyhogenbirk.nl/items/aff/zips/aff_app_2.zip
+3 ;Site;Code for making a site;1;07-10-2019;https://www.johnnyhogenbirk.nl/items/aff/zips/aff_site_1.zip
+4 ;App;Code for making a application, with login functionality and building views and models;1;07-10-2019;https://www.johnnyhogenbirk.nl/items/aff/zips/aff_app_1.zip
