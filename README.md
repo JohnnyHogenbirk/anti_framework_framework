@@ -55,7 +55,7 @@ What I want to give is a thought, a way of set up code, an architecture. Use wha
 ### Handy
 It can be handy to download the code before looking at the pictures and reading the text. But, I leave it to you. You can start with app_site. It’s less complex: no login, no ini generation functionality.
 
-You can try it your self at the demo sites (they will be refreshed daily):
+You can try it yourself at the demo sites (they will be refreshed daily):
 - [AFF site](https://johnnyhogenbirk.nl/aff_site/)
 - [AFF app](https://johnnyhogenbirk.nl/aff_app/)
 
@@ -64,7 +64,7 @@ You can try it your self at the demo sites (they will be refreshed daily):
 
 ![p1](https://www.johnnyhogenbirk.nl/items/aff/images/p1.jpg)
  
-The browser ask for the main page: index.html.
+The browser asks for the main page: index.html.
 It’s a very simple html-page, some meta tags in de head, some Javascript for start actions and very little html. 
 
 
@@ -79,7 +79,7 @@ In the index.html page, at the end, a few Javascript functions will be called: r
 
 ![p3](https://www.johnnyhogenbirk.nl/items/aff/images/p3.jpg)
 
-In the data that is loaded, there was also a little Javascript: ask for the starting page. That question-code will be used every time the browser want to have a page.
+In the data that is loaded, there was also a little Javascript: ask for the starting page. That question-code will be used every time the browser wants to have a page.
 
 Api.php opens the ini file of the view. In that ini file can be specifications for data and Javascript. When that’s the case, api.php does collect also the data and Javascript.
 
@@ -87,7 +87,7 @@ Api.php opens the ini file of the view. In that ini file can be specifications f
 ### Step 4 and next
  ![p4](https://www.johnnyhogenbirk.nl/items/aff/images/p4.jpg)
  
-After the start, the situation can be repeated: if the browser want to have a view, it will ask for it.
+After the start, the situation can be repeated: if the browser wants to have a view, it will ask for it.
 
 But, there is another situation possible: the user want to store data (submit form). In that case api.php first store the data, then send back (if noted in the view) a message and Javascript that will ask for the next page.
 
@@ -109,7 +109,7 @@ The main code is api.php.
 It can be only used with a get-call with the parameter 'view_name’ ($_GET['view_name']) or with a post-call with the parameter ‘f_view_name’ ($_POST['f_view_name']) and ‘f_button_id ($_POST["f_button_id"]).
 It can be called by the browser, but also by other webservers. 
 
-If 'view_name’ or 'f_view_name+f_button_id' is present, it include some functions and starts the session.
+If 'view_name’ or 'f_view_name+f_button_id' is present, it includes some functions and starts the session.
 After that, there are two situations that can be occur (not both at the same call):
 - Post: Then it handles the post.
 - Get: Then it handles the delivery of the view.
@@ -139,7 +139,7 @@ In de map php there also two maps: get and put. These files are ‘the code’ i
 
 ![p7](https://www.johnnyhogenbirk.nl/items/aff/images/p7.jpg)
 
-The last map: the map view. You find three typical view maps in this map: fonts, images and javascript. The map javacript contains two maps: Javascript witch is needed at the start of the application (step 2, so the map is called ‘start’) and Javascript needed in the next steps, stored in the map ‘operation’.
+The last map: the map view. You find three typical view maps in this map: fonts, images and javascript. The map javacript contains two maps: Javascript which is needed at the start of the application (step 2, so the map is called ‘start’) and Javascript needed in the next steps, stored in the map ‘operation’.
 
 There is one special map: views. It contains like text files (in csv-structure) that describe the views.
 I will talk you through later (in ‘generation’).
@@ -161,11 +161,11 @@ We can merge the process and file structure to a kind of MVC picture. I want to 
 
 As I said, there are several pictures of MVC-models, with tree balloons and arrows. But each picture has arrows between different balloons or different direction. Mostly I don’t understand why they paint it the way they do.
 
-In my opinion the webserver make the call to the controller. So, only the controller can talk back. Not the view or the model, as some pictures from others show.
+In my opinion the webserver makes the call to the controller. So, only the controller can talk back. Not the view or the model, as some pictures from others show.
 
 And if the question from the webserver is to store data, there is no view present in de loop. The only data that is given back, is a message (data stored or something like that) and a kind of advice: Javascript with a script that ask for the next view.
 
-Note: it’s the webserver that talks to the controller, not the browser! The caller can be a browser or backend code. The caller ask the webserver(!) for information of give it data to store. The application code is stored on a application server and the database on a database server (physically on another server or on a shared server, that’s not interesting for the architectural software concept).
+Note: it’s the webserver that talks to the controller, not the browser! The caller can be a browser or backend code. The caller asks the webserver(!) for information of give it data to store. The application code is stored on an application server and the database on a database server (physically on another server or on an shared server, that’s not interesting for the architectural software concept).
 
 
 ## Generation, overview
@@ -178,7 +178,7 @@ Note: the ini files are text files, with a certain structure. I use csv, but jso
 
 
 ### Generate generation file with the generator
-I admit, It’s a little complex: the generation of ini files are mainly done with views and models that are generated in a previous stage. Generation by the generator. Sometime I’m confused myself.
+I admit, it’s a little complex: the generation of ini files are mainly done with views and models that are generated in a previous stage. Generation by the generator. Sometimes I’m confused myself.
 
 I said ‘mainly’, because they need some help from code (in my case, php-code).
 
@@ -197,9 +197,9 @@ The start functions do focus on getting the main Javascript, style and Html. You
 ### After start, get (first) view
 The php function ‘f_v_get_view’ is more complex. The function takes tree steps: get the view, the Javascript and data. Only the view is always needed, the Javascript and data can be needed. 
 
-In the ‘Get the view’ step the ini file will be read and stored in a array with index ‘view’. It’s a copy of the ini file. It will be send back by api.php via json, to the browser.
+In the ‘Get the view’ step the ini file will be read and stored in an array with index ‘view’. It’s a copy of the ini file. It will be sent back by api.php via json, to the browser.
 
-At the start (step 2), the Javascript function ‘f_get_content’ was loaded. That function did the call for a view. After getting the view specs (the copy of the ini file), the function ‘f_get_content_catch_reply’ will be called. This function handles (if present) the alert, include the Javascript and execute the Javascript. But the main functions that will be called are ‘f_show_form’ and ‘f_show_overview’. They transfer the spec’s from the view to Html code.
+At the start (step 2), the Javascript function ‘f_get_content’ was loaded. That function did the call for a view. After getting the view specs (the copy of the ini file), the function ‘f_get_content_catch_reply’ will be called. This function handles (if present) the alert, include the Javascript and execute the Javascript. But the main functions that will be called are ‘f_show_form’ and ‘f_show_overview’. They transfer the specs from the view to Html code.
 
 
 ### and Javascript and data, if needed
@@ -220,9 +220,9 @@ In the example aff_site I deleted all sys files. So, you can see what code is ne
 Back to the ini generation. If you login with admin, admin, you have extra menu options. I talk you through the options.
 
 ### CP-Views
-The first one is a overview of all views. You can change them, if you click on ‘Change’. Then you see an overview of all lines in that view. After a click on ‘Change’ you get a form, where you can changes all settings.
+The first one is an overview of all views. You can change them, if you click on ‘Change’. Then you see an overview of all lines in that view. After a click on ‘Change’ you get a form, where you can change all settings.
 
-In fact, it is not very different from changing the view ini file with the text editor. There is one advantage: the Javascript in that form hide and show the settings you (don’t) need for a specific type row. Because of this support, a non-developer can generate and change views. In fact, I did sold my framework a view times to customers. I did give a training of a few day’s to non-developers. After the training, they could make their own views and overviews.
+In fact, it is not very different from changing the view ini file with the text editor. There is one advantage: the Javascript in that form hide and show the settings you (don’t) need for a specific type row. Because of this support, a non-developer can generate and change views. In fact, I did sell my framework a view times to customers. I did give a training of a few day’s to non-developers. After the training, they could make their own views and overviews.
 
 Ok, the terms views. forms and overviews are a little confusing. Technically there are views. But, sometimes you want a screen with a table. Then I call that view an overview. In other cases you want to let the user add, mutate or delete data. I give that views the name forms. Like the Html-tag form.
 
@@ -236,7 +236,7 @@ The ‘Javascript start’ is needed when you want to make elements invisible, d
 
 
 ### CP-Models
-In the menu the next options are ‘Models get’ and ‘Models put’. The way of mutate them is the same as views. So, in the first overview you see al models, after ‘Change’ you see the rows and after ‘Change’ you can modify a certain row.
+In the menu the next options are ‘Models get’ and ‘Models put’. The way of mutating them is the same as views. So, in the first overview you see all models, after ‘Change’ you see the rows and after ‘Change’ you can modify a certain row.
 
 
 ### CP-Changes
@@ -255,17 +255,17 @@ In this section a zoom in on the connection between all parts off the Html-gener
 
 
 ### Get view
-You can open a ini file in the map views/view by a text editor.
+You can open an ini file in the map views/view by a text editor.
 
 The first seven columns are clear, not difficult to understand. 
 
 The eight column is called ‘dataset_name’. In the current version, there is only one value possible. You cannot have two datasets. Some rows don’t need a dataset: the headtext and button are typically rows that don’t need a dataset.
 
-The next column is ‘dataset_field’. Its clear, this is a column from the dataset.
+The next column is ‘dataset_field’. It's clear, this is a column from the dataset.
 
 The next four columns is specifically for dropdownlist: you can register the dataset, the column that must be store in ‘option’ in de ‘select’ element, the column that must be showed and finally you can register if a blank (first) row must be added in the dropdownlist. The value in ‘dataset_name. dataset_field’ will be selected in the dropdownlist (if present in the list).
 
-The columns ‘check’, ‘blur’ and ‘start’ can contain javascript that must be used on posting, on leaving a element or at the start of the Html-generation.
+The columns ‘check’, ‘blur’ and ‘start’ can contain javascript that must be used on posting, on leaving an element or at the start of the Html-generation.
 
 The column ‘action’ is specific for buttons and the last column for overviews.
 
@@ -281,7 +281,7 @@ Javascript: when there is need of Javascript, the files will be read from views/
 As mentioned, the browser (or another webserver) can post data to api.php. There must be posted a view name and a button id.
 Each view_name does have a ‘put model’. In de map models/model/put you can find them. The name is the same as the view name. Only the view starts with ‘v_’ (view), the model with ‘mp_’ ( ‘model put’).
 
-In de model put ini files is per button registered what the actions must be. The php-code walk trough these actions. 
+In de model put ini files is per button registered what the actions must be. The php-code walk through these actions. 
 
 I think not much explanation is needed. There are different actions: in the current php-code only mysql, txt, next_view and php are supported. You can make more. 
 
