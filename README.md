@@ -24,7 +24,8 @@ What is the alternative? Create your own framework!
 Is it hard to do? Yes, it cost a view weeks or months. But I use my own framework more than 15 years. It’s still in production, several clients use the framework for five different applications.
 
 Yes, I did update the framework several times. Little or bigger changes. But’s it is worth it. I create new forms/overviews in seconds or minutes, depending on the difficulty. And if I must add code, of course, then I spend also hours on a certain functionality. But always within the framework, also using functionality of the framework. So, it works rapidly.
-The performance of my own framework is much better the the vendor frameworks. Performance is very important nowadays, also because of the growing use of SmartPhones. The performance of both aff_site as aff_app on the Google performance test is 100!
+
+I'm not locked in by a vendor (or open source framework), I do not have to search at and grow into a new framework every few years, I have no trouble with updates and the performance of my own framework is much better the the vendor frameworks. Performance is very important nowadays, also because of the growing use of SmartPhones. The performance of both aff_site as aff_app on the Google performance test is 100!
 
 
 ### Architectural preferences
